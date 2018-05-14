@@ -1,0 +1,115 @@
+<h1>ScHoolboy Q straight outta Hoover Street</h1>
+<div class="gallery">
+ <div class="gallery-column videos">
+  <div class="video-toggle" (click)="this.decSlide();">
+   <i class="fas fa-sort-up"></i>
+  </div>
+  <div class="video-slides-wrap">
+   <div
+   class="video-slides easing"
+   [ngClass]="{
+    's1': this.cur_slide == 0,
+    's2': this.cur_slide == 1,
+    's3': this.cur_slide == 2,
+    's4': this.cur_slide == 3
+   }"
+   >
+    <div
+    class="video-slide easing"
+    [ngClass]="{'active': this.cur_slide == 0}"
+    >
+     <iframe src="https://www.youtube.com/embed/5dBy9KEorjw?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div
+    class="video-slide easing"
+    [ngClass]="{'active': this.cur_slide == 1}"
+    >
+     <iframe src="https://www.youtube.com/embed/_L2vJEb6lVE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div
+    class="video-slide easing"
+    [ngClass]="{'active': this.cur_slide == 2}"
+    >
+     <iframe src="https://www.youtube.com/embed/rEMsjeq43_U?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div
+    class="video-slide easing"
+    [ngClass]="{'active': this.cur_slide == 3}"
+    >
+     <iframe src="https://www.youtube.com/embed/8zo9VTJUVWc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+   </div>
+  </div>
+  <div class="video-toggle" (click)="this.incSlide();">
+   <i class="fas fa-sort-down"></i>
+  </div>
+ </div>
+ <div class="gallery-column downloads">
+  <div class="header">
+   <h2>ScHoolboy Q be thuggin your terminal now</h2>
+   <h2>Download the ScHoolboy Q terminal for free, Q about that MIT License</h2>
+  </div>
+  <div class="download-links">
+   <a class="download" href="https://chriscates.nyc3.digitaloceanspaces.com/darwin.zip" target="_blank">
+    <img src="/assets/apple.logo.png"/>
+   </a>
+   <a class="download" href="https://chriscates.nyc3.digitaloceanspaces.com/linux.zip" target="_blank">
+    <img src="/assets/ubuntu.logo.png"/>
+   </a>
+   <a class="download" href="https://chriscates.nyc3.digitaloceanspaces.com/win32.zip" target="_blank">
+    <img src="/assets/windows.logo.png"/>
+   </a>
+  </div>
+ </div>
+</div>
+
+<div class="product-slides-wrap">
+ <div class="product-slides easing"
+ [ngClass]="{
+  's1': this.pslide == 0,
+  's2': this.pslide == 1,
+  's3': this.pslide == 2,
+  's4': this.pslide == 3
+ }"
+ >
+  <div class="product-slide">
+   <img src="/assets/screens/s1.png"/>
+  </div>
+  <div class="product-slide">
+   <img src="/assets/screens/s2.png"/>
+  </div>
+  <div class="product-slide">
+   <img src="/assets/screens/s3.png"/>
+  </div>
+  <div class="product-slide">
+   <img src="/assets/screens/s4.png"/>
+  </div>
+ </div>
+</div>
+
+<div class="info">
+ <h2>Why ScHoolboy Q?</h2>
+
+ <h3>Normal shell interfaces don't show data the best way</h3>
+ <p>Traditionally, users of unix have resorted to tmux for interfacing with multiple sessions at once. ScHoolboy Q on the otherhand always gives the user an option to view (or filter) these key data outputs:</p>
+ <ol>
+  <li>stdout: normal output data</li>
+  <li>stderr: error output data</li>
+  <li>pid: what process id it is currently using</li>
+  <li>process signal: the state of the process (is it running, stopped, exited)</li>
+ </ol>
+
+ <h3>Traversing the filesystem is cumbersome and frustrating</h3>
+ <p>ScHoolboy Q intends to give a good balance between speed and readability of folder structures. You can always tweak how ScHoolboy Q traverses the filesystem, forcing it to do recursive walks of only certain folders, watching parts of the filesystem at certain time intervals, and to ignore reading parts of your filesystem altogether.</p>
+
+ <h3>Parallelized commands are impossible in normal shell</h3>
+ <p>ScHoolboy Q makes sure that every command is a first class citizen. ScHoolboy Q makes sure that you can view everything that happened with that command... The amount of time it took to execute, as well as everything specified in point 1.</p>
+
+ <h3>Want to make ScHoolboy Q better? Check out the
+  <a href="https://github.com/ChrisCates/ScHoolboyQ">
+   <i class="fab fa-github"></i>
+   Github.
+  </a>
+ </h3>
+
+</div>
