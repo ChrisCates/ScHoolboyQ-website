@@ -183,7 +183,7 @@ div.info {
  width: 100%;
  max-width: 768px;
  margin: 15px auto;
- padding-bottom: 90px;
+ padding: 0 15px 90px 15px;
  color: white;
 
  h2, h3 {
@@ -194,4 +194,28 @@ div.info {
  p, ol {
   margin-bottom: 15px;
  }
+}
+
+@media(max-width: 500px) {
+  div.gallery {
+   height: auto;
+   padding: 15px 0;
+   flex-wrap: wrap;
+   div.gallery-column {
+    width: 100%;
+   }
+  }
+
+  div.download-links {
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   a.download {
+    width: 300px !important;
+    height: 300px !important;
+    img {
+     height: 100px !important;
+    }
+   }
+  }
 }
